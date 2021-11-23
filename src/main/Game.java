@@ -11,14 +11,15 @@ public class Game {
     JFrame window;
     Container container;
 //    Create Title Screen, button
-    JPanel titleScreenPanel, startButtonPanel, mainTextPanel, choiceButtonPanel;
+    JPanel titleScreenPanel, startButtonPanel, mainTextPanel, choiceButtonPanel, playerAtrributesPanel;
 //    Creates the text to display
-    JLabel titleScreenLabel;
+    JLabel titleScreenLabel, hpLabel, hpLabelNumber, weaponLabel, weaponLabelType;
 //    Creates a custom font called titleFont
     Font titleFont = new Font("manaspace", Font.PLAIN, 60);
     Font buttonFont= new Font("Karmatic Arcade", Font.PLAIN, 30);
     Font choiceButtonFont = new Font("yoster island",Font.PLAIN, 30);
     Font textFont = new Font("manaspace", Font.PLAIN,30);
+    Font attributesFont = new Font("Orange Kid", Font.PLAIN,30);
 //    Creates Button
     JButton startButton, choice1, choice2, choice3, choice4;
 //Create text area
@@ -159,8 +160,44 @@ public class Game {
         choiceButtonPanel.add(choice4);
 
 
+//        Player Attributes
+
+        playerAtrributesPanel = new JPanel();
+        playerAtrributesPanel.setBounds(100, 15,600, 50);
+        playerAtrributesPanel.setBackground(Color.black);
+        playerAtrributesPanel.setLayout(new GridLayout(1, 2));
+        container.add(playerAtrributesPanel);
+
+//        hp
+        hpLabel = new JLabel("HP:");
+        hpLabel.setFont(attributesFont);
+        hpLabel.setForeground(Color.white);
+        playerAtrributesPanel.add(hpLabel);
+
+//      hp number
+        hpLabelNumber = new JLabel();
+        hpLabelNumber.setFont(attributesFont);
+        hpLabelNumber.setForeground(Color.white);
+        playerAtrributesPanel.add(hpLabelNumber);
+
+//        weapon
+        weaponLabel = new JLabel("Weapon");
+        weaponLabel.setFont(attributesFont);
+        weaponLabel.setForeground(Color.white);
+        playerAtrributesPanel.add(weaponLabel);
+
+//        Weapon type]
+        weaponLabelType = new JLabel();
+        weaponLabelType.setFont(attributesFont);
+        weaponLabelType.setForeground(Color.white);
+        playerAtrributesPanel.add(weaponLabelType);
+
+
+
+
 
     }
+
 
 //    button function - the function wil lbe called on when button is clicked
 

@@ -112,7 +112,7 @@ public class Game {
         mainTextPanel.setBackground(Color.black);
         container.add(mainTextPanel);
 
-        mainTextArea = new JTextArea("Welcome to Codebreaker");
+        mainTextArea = new JTextArea("Choose your character");
         mainTextArea.setBounds(100,100,600,250);
         mainTextArea.setBackground(Color.black);
         mainTextArea.setForeground(Color.white);
@@ -133,26 +133,26 @@ public class Game {
         container.add(choiceButtonPanel);
 
 //        choice1 Button
-        choice1 = new JButton("Choice 1");
+        choice1 = new JButton("Calum");
         choice1.setBackground(Color.black);
         choice1.setForeground(Color.white);
         choice1.setFont(choiceButtonFont);
         choiceButtonPanel.add(choice1);
 
 //      choice2 Button
-        choice2 = new JButton("Choice 2");
+        choice2 = new JButton("Tony");
         choice2.setBackground(Color.black);
         choice2.setForeground(Color.white);
         choice2.setFont(choiceButtonFont);
         choiceButtonPanel.add(choice2);
 //      choice3 button
-        choice3 = new JButton("Choice 3");
+        choice3 = new JButton("Will");
         choice3.setBackground(Color.black);
         choice3.setForeground(Color.white);
         choice3.setFont(choiceButtonFont);
         choiceButtonPanel.add(choice3);
 //      choice4 button
-        choice4 = new JButton("Choice 4");
+        choice4 = new JButton("Lewis");
         choice4.setBackground(Color.black);
         choice4.setForeground(Color.white);
         choice4.setFont(choiceButtonFont);
